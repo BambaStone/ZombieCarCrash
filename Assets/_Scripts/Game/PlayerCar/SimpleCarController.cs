@@ -211,7 +211,7 @@ public class SimpleCarController : MonoBehaviour
             UseAccele = false;                  //가속해제
         }
 
-        if (Input.GetKey(KeyCode.S))//W키를 누르고 있을때
+        if (Input.GetKey(KeyCode.S))//S키를 누르고 있을때
         {
             if (UseAccele)                  //가속이 작동중이면
             {
@@ -252,7 +252,7 @@ public class SimpleCarController : MonoBehaviour
         {
             UseHandBrake = true;    //핸드브레이크 작동
         }
-        if(Input.GetKeyUp(KeyCode.Space))
+        if(Input.GetKeyUp(KeyCode.Space))//스페이스 땟을시
         {
             UseHandBrake = false;   //핸드브레이크 해제
             UnHandBrake();

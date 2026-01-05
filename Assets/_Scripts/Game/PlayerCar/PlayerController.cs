@@ -5,19 +5,19 @@ using UnityEngine.UI;
 using TMPro;
 public class PlayerController : MonoBehaviour
 {
-    SimpleCarController _car;
-    public TMP_Text CarHPText;
-    public Image CarHPImage;
-    public TMP_Text CoinText;
-    public Image CoinImage;
-    public float HP = 100;
-    public float MAXHP = 100;
-    public float ReHP = 1f;
-    public List<GameObject> Weapons;
-    public List<GameObject> WeaponsEffect;
-    public List<GameObject> Effectrecycling;
-    public int WeaponNums = 3;
-    public int Coin = 0;
+    SimpleCarController _car;       //차의 움직임을 관리하는 컴포넌트 변수
+    public TMP_Text CarHPText;      //차의 HP 텍스트UI
+    public Image CarHPImage;        //차의 HP바 이미지 UI
+    public TMP_Text CoinText;       //차의 짐칸에 실린 코인탱크의 텍스트 UI
+    public Image CoinImage;         //차의 코인탱크의 이미지UI
+    public float HP = 100;          //차의 현재 HP
+    public float MAXHP = 100;       //차의 최대 HP
+    public float ReHP = 1f;         //차의 HP회복력
+    public List<GameObject> Weapons;    //차에 달수있는 무기 종류가 들어있는 리스트
+    public List<GameObject> WeaponsEffect;//무기종류별 이펙트가 들어있는 리스트
+    public List<GameObject> Effectrecycling;//무기 이펙트 재활용을 위한 리스트
+    public int WeaponNums = 3;              //현재 무기의 번호
+    public int Coin = 0;                    //
     public int MaxCoin = 100;
     public int Energy=0;
     public int WeaponDamage = 0;

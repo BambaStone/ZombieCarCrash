@@ -13,6 +13,7 @@ public class DropCoin : MonoBehaviour   //플레이어의 차 또는 좀비에게서 드랍된 �
     private bool _goCoinInput = false;//드랍된 코인을 다른 코인 투입구로 향할때의 출발 상태
     private float _coinSpeed = 0;//드랍된코인의 이동속도
     private bool _triggerOn = true;//드랍된 코인의 트리거가 켜져있는지 상태
+
     private void OnEnable()//스크립트가 포함된 오브젝트가 활성화시 = 드랍코인 활성화시
     {
         _triggerOn = true;//트리거상태 true
