@@ -96,6 +96,21 @@ public class UI : MonoBehaviour
     public void ResetButton()
     {
         StatusManager.Instance.NewGame();
+        switch (StatusManager.Instance.SaveNum)
+        {
+            case 1:
+                Save1Button();
+                Save1Button();
+                break;
+            case 2:
+                Save2Button();
+                Save2Button();
+                break;
+            case 3:
+                Save3Button();
+                Save3Button();
+                break;
+        }
     }
 
     public void QuitButton()

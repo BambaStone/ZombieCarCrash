@@ -79,7 +79,7 @@ public class StatusManager : MonoBehaviour
         HPRegen      = PlayerPrefs.GetInt("HPRegen" + SaveNum, 0);
         CoinTank     = PlayerPrefs.GetInt("CoinTank" + SaveNum, 0);
         WorldCoin    = PlayerPrefs.GetInt("WorldCoin" + SaveNum, 0);
-        NextUpgradePrice = PlayerPrefs.GetInt("NextUpgradePrice" + SaveNum, 0);
+        NextUpgradePrice = PlayerPrefs.GetInt("NextUpgradePrice" + SaveNum, 10);
         Score = PlayerPrefs.GetInt("Score" + SaveNum, 0);
         
         for (int i = 0; i < MaxStage; i++)
